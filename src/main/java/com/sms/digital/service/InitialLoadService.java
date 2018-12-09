@@ -28,7 +28,7 @@ public class InitialLoadService {
       });
       hotelRepository.saveAll(hotels);
     } catch (IOException e) {
-      e.printStackTrace();
+      logger.info(e.getMessage());
     }
   }
 }
