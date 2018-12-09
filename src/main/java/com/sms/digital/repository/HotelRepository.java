@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.sms.digital.entity.Hotel;
 
+@Repository
 @RepositoryRestResource(collectionResourceRel = "hotel", path = "hotel")
 public interface HotelRepository extends CrudRepository<Hotel, Integer>{
 

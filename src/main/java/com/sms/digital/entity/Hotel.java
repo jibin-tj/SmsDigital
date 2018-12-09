@@ -2,19 +2,13 @@ package com.sms.digital.entity;
 
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.time.LocalDate;
 
-import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.format.annotation.DateTimeFormat.ISO;
-
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -77,6 +71,11 @@ public class Hotel {
   }
   public void setStartDate(Date startDate) {
     this.startDate = startDate;
+  }
+  @Override
+  public String toString() {
+    return "Hotel [id=" + id + ", city=" + city + ", startDate=" + startDate + ", endDate=" + endDate + ", price="
+        + price + ", status=" + status + ", color=" + color + "]";
   }
   
 
