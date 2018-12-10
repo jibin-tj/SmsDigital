@@ -36,7 +36,7 @@ class HotelRepositoryTest {
   @Test
   @DisplayName("findByIdTest")
   void finByIdtest() {
-    assertThat(repo.findById(1)).matches(hotel -> hotel.get().getId() == 2);
+    assertThat(repo.findById(1)).matches(hotel -> hotel.get().getId() == 1);
   }
 
 }

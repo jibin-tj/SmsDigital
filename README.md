@@ -18,6 +18,7 @@ Run Tests
 ```sh
 $ ./gradlew test
 ```
+Test report @ ``build/reports/tests/test``
 
 Build docker image
 
