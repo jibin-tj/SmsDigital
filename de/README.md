@@ -1,6 +1,6 @@
 # SmsDigital
 
-SmsDigital coding challenge backend
+German SmsDigital coding challenge backend
 
 Build project
 
